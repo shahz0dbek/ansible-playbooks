@@ -1,0 +1,18 @@
+---
+- name: test playbook
+  hosts: all
+  become: yes
+
+
+  tasks:
+  - name: test
+    ping:
+
+
+  - name: test2
+    apt: 
+      upgrade: yes
+
+ # - name: test3
+ #   yum: update
+
